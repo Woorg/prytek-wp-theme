@@ -48,9 +48,7 @@ window.addEventListener('resize', function() {
 })
 
 
-// jQuery(document).ready(function ($) {
-//     $('img').removeAttr('width').removeAttr('height');
-// });
+$('img').removeAttr('width').removeAttr('height');
 
 
 }());

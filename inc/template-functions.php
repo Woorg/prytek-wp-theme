@@ -131,6 +131,12 @@ function prytek_remove_width_attribute( $html ) {
 }
 
 
+// Add custom contact form 7 shortcode
+
+function prytek_get_template_directory_uri() {
+  return get_template_directory_uri();
+}
+wpcf7_add_form_tag('get_template_directory_uri', 'prytek_get_template_directory_uri');
 
 
 

@@ -67,5 +67,58 @@
         </div>
     </footer>
     <?php wp_footer(); ?>
+
+    <script>
+
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            // event.preventDefault();
+            console.log(event);
+
+            if ( 'validation_failed' == event.detail.apiResponse.status ) {
+
+            } else if ( 'mail_sent' == event.detail.apiResponse.status ) {
+                $(".submit").addClass("loading");
+                setTimeout(function() {
+                    $(".submit").addClass("hide-loading");
+                    // For failed icon .failed
+                    $(".done").addClass("finish");
+                }, 3000);
+                setTimeout(function() {
+                    $(".submit").removeClass("loading");
+                    $(".submit").removeClass("hide-loading");
+                    $(".done").removeClass("finish");
+                    $(".failed").removeClass("finish");
+                }, 5000);
+            }
+
+
+        });
+
+        // document.addEventListener( 'wpcf7mailsent', function( event ) {
+            // console.log(event);
+
+            // if ( 'mail_sent' == event.detail.status ) {
+
+            //     openPopup();
+
+            //             function openPopup() {
+
+            //                 jQuery.magnificPopup.open({
+            //                     items: {
+            //                         src: '#success'
+            //                     },
+            //                     type: 'inline'
+            //                 });
+
+            //             }
+
+            // }
+
+
+        // });
+
+
+    </script>
+
 </body>
 </html>

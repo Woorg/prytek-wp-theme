@@ -40,8 +40,8 @@ get_header(); ?>
           <?php echo wp_get_attachment_image( $contact_page_map, 'full' ); ?>
       </div>
       <div class="contacts-map">
-         <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
-          <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+         <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
+          <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
           <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
 
           <?php if ($i === 8): ?>
@@ -67,8 +67,8 @@ get_header(); ?>
 
       </div>
 
-    <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
-      <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+    <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
+      <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
       <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
 
       <?php if ($i === 3): ?>
@@ -97,8 +97,8 @@ get_header(); ?>
   <div class="adresses">
       <div class="adresses-row">
 
-        <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
-          <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+        <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
+          <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
           <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
 
            <?php if ($i === 1): ?>
@@ -109,14 +109,15 @@ get_header(); ?>
           </div>
           <?php endif; ?>
 
+
         <?php endwhile; ?>
 
         <?php endif; ?>
 
-        <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
+        <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
 
           <div class="address-mobile">
-            <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+            <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
               <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
 
               <?php if ($i === 2): ?>
@@ -197,8 +198,8 @@ get_header(); ?>
 
 
 
-        <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
-          <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+        <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
+          <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
           <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
 
           <?php if ($i === 5): ?>
@@ -230,9 +231,9 @@ get_header(); ?>
 
 
 
-      <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
+      <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
       <div class="adresses-row">
-        <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+        <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
           <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
 
           <?php if ($i === 2): ?>
@@ -269,9 +270,9 @@ get_header(); ?>
       </div>
       <?php endif; ?>
 
-      <?php if ( have_rows( 'addresses', 'option' ) ) : $i = 0; ?>
+      <?php if ( have_rows( 'contacts_adresses' ) ) : $i = 0; ?>
       <div class="adresses-row adresses-row-russia-israel">
-        <?php while ( have_rows( 'addresses', 'option' ) ) : the_row(); $i++; ?>
+        <?php while ( have_rows( 'contacts_adresses' ) ) : the_row(); $i++; ?>
           <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
           <?php if ($i === 3): ?>
 

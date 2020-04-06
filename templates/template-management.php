@@ -36,7 +36,7 @@ get_header();
             <div class="senior" <?php echo $hide;  ?>>
               <?php $image = get_sub_field( 'image' ); ?>
                 <div class="image-senior">
-                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                 </div>
                 <div class="wrapper-senior-text">
                     <div class="senior_text">
@@ -55,7 +55,7 @@ get_header();
             <div class="senior" <?php echo $hide;  ?>>
               <?php $image = get_sub_field( 'image' ); ?>
                 <div class="image-senior">
-                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                 </div>
                 <div class="wrapper-senior-text">
                     <div class="senior_text">
@@ -74,7 +74,7 @@ get_header();
             <div class="senior" <?php echo $hide;  ?>>
               <?php $image = get_sub_field( 'image' ); ?>
                 <div class="image-senior">
-                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                 </div>
                 <div class="wrapper-senior-text">
                     <div class="senior_text">
@@ -101,7 +101,7 @@ get_header();
             <div class="senior" <?php echo $hide;  ?>>
               <?php $image = get_sub_field( 'image' ); ?>
                 <div class="image-senior">
-                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                 </div>
                 <div class="wrapper-senior-text">
                     <div class="senior_text">
@@ -122,7 +122,7 @@ get_header();
             <div class="senior" <?php echo $hide;  ?>>
               <?php $image = get_sub_field( 'image' ); ?>
                 <div class="image-senior">
-                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                    <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                 </div>
                 <div class="wrapper-senior-text">
                     <div class="senior_text">
@@ -147,7 +147,7 @@ get_header();
                 <div class="senior" <?php echo $hide;  ?>>
                   <?php $image = get_sub_field( 'image' ); ?>
                     <div class="image-senior">
-                        <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                        <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                     </div>
                     <div class="wrapper-senior-text">
                         <div class="senior_text">
@@ -166,7 +166,7 @@ get_header();
                 <div class="senior" <?php echo $hide;  ?>>
                   <?php $image = get_sub_field( 'image' ); ?>
                     <div class="image-senior">
-                        <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                        <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                     </div>
                     <div class="wrapper-senior-text">
                         <div class="senior_text">
@@ -184,7 +184,7 @@ get_header();
                 <div class="senior" <?php echo $hide;  ?>>
                   <?php $image = get_sub_field( 'image' ); ?>
                     <div class="image-senior">
-                        <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                        <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                     </div>
                     <div class="wrapper-senior-text">
                         <div class="senior_text">
@@ -211,7 +211,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -231,7 +231,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -251,7 +251,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -278,7 +278,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -296,7 +296,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -322,7 +322,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -343,7 +343,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -362,7 +362,7 @@ get_header();
               <div class="senior" <?php echo $hide;  ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -390,7 +390,7 @@ get_header();
               <div class="senior" <?php echo $hide; ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">
@@ -410,7 +410,7 @@ get_header();
               <div class="senior" <?php echo $hide; ?>>
                 <?php $image = get_sub_field( 'image' ); ?>
                   <div class="image-senior">
-                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'full' ); ?></a>
+                      <a href="<?php the_sub_field( 'link' ); ?>" ><?php echo wp_get_attachment_image( $image, 'medium' ); ?></a>
                   </div>
                   <div class="wrapper-senior-text">
                       <div class="senior_text">

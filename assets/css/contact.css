@@ -46,7 +46,7 @@
             font-size: 17px; }
           .contact-main .contact-section1 .form form input:hover {
             border-color: #2B2B2B; }
-          .contact-main .contact-section1 .form form input:invalid:not(:placeholder-shown) {
+          .contact-main .contact-section1 .form form input:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form input.wpcf7-not-valid {
             border-color: #F45B53; }
           .contact-main .contact-section1 .form form input:valid:not(:placeholder-shown) {
             border-color: #41CE7F; }
@@ -67,7 +67,7 @@
             color: #A5A5A5; }
           .contact-main .contact-section1 .form form textarea:hover {
             border-color: #2B2B2B; }
-          .contact-main .contact-section1 .form form textarea:invalid:not(:placeholder-shown) {
+          .contact-main .contact-section1 .form form textarea:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form textarea.wpcf7-not-valid {
             border-color: #F45B53; }
           .contact-main .contact-section1 .form form textarea:valid:not(:placeholder-shown) {
             border-color: #41CE7F; }
@@ -89,6 +89,12 @@
               stroke: white; }
           .contact-main .contact-section1 .form form .button.loading:hover {
             background-color: #fff !important; }
+        .contact-main .contact-section1 .form form.invalid input:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form.invalid input.wpcf7-not-valid {
+          border-color: #F45B53; }
+        .contact-main .contact-section1 .form form.invalid textarea:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form.invalid textarea.wpcf7-not-valid {
+          border-color: #F45B53; }
+        .contact-main .contact-section1 .form form.invalid [aria-required="true"] {
+          border-color: #F45B53; }
   .contact-main .contact-section2 {
     display: flex;
     margin-bottom: 100px;
@@ -399,5 +405,13 @@
   transform: rotate(0deg) !important;
   -webkit-transform: scale(0) !important;
   transform: scale(0) !important; }
+
+.wpcf7-response-output,
+.wpcf7-not-valid-tip,
+.screen-reader-response {
+  display: none !important; }
+
+.wpcf7-response-output {
+  font-size: 0; }
 
 /*# sourceMappingURL=contact.css.map */

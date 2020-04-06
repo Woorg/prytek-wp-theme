@@ -524,6 +524,13 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
       box-shadow: 0px 25px 50px rgba(78, 81, 144, 0.07); }
       .main-areas .main-areas-cont .main-areas-box:not(:last-child) {
         margin-right: 40px; }
+      .main-areas .main-areas-cont .main-areas-box .main-areas_image {
+        max-width: 85px;
+        width: 100%; }
+        .main-areas .main-areas-cont .main-areas-box .main-areas_image img {
+          max-width: 100%;
+          width: 100%;
+          height: auto; }
       .main-areas .main-areas-cont .main-areas-box h5 {
         font-weight: bold;
         font-size: 17px;
@@ -1166,6 +1173,21 @@ h1, p, h2, h3, h4, h5, h6, a, ul, li {
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 1px; }
+        .media-main .media-articles .media-article a.media-article__title-link {
+          font-size: 28px;
+          line-height: 40px;
+          color: #2B2B2B;
+          font-weight: bold;
+          margin-bottom: 20px; }
+        .media-main .media-articles .media-article a.media-article__more {
+          color: #0080FF;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 14px;
+          letter-spacing: 1px; }
+      .media-main .media-articles .media-article img {
+        max-width: 100%;
+        height: auto; }
   .media-main .page-wrapper {
     width: 940px;
     display: flex;
@@ -3034,7 +3056,7 @@ button:focus {
             font-size: 17px; }
           .contact-main .contact-section1 .form form input:hover {
             border-color: #2B2B2B; }
-          .contact-main .contact-section1 .form form input:invalid:not(:placeholder-shown) {
+          .contact-main .contact-section1 .form form input:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form input.wpcf7-not-valid {
             border-color: #F45B53; }
           .contact-main .contact-section1 .form form input:valid:not(:placeholder-shown) {
             border-color: #41CE7F; }
@@ -3055,7 +3077,7 @@ button:focus {
             color: #A5A5A5; }
           .contact-main .contact-section1 .form form textarea:hover {
             border-color: #2B2B2B; }
-          .contact-main .contact-section1 .form form textarea:invalid:not(:placeholder-shown) {
+          .contact-main .contact-section1 .form form textarea:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form textarea.wpcf7-not-valid {
             border-color: #F45B53; }
           .contact-main .contact-section1 .form form textarea:valid:not(:placeholder-shown) {
             border-color: #41CE7F; }
@@ -3077,6 +3099,12 @@ button:focus {
               stroke: white; }
           .contact-main .contact-section1 .form form .button.loading:hover {
             background-color: #fff !important; }
+        .contact-main .contact-section1 .form form.invalid input:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form.invalid input.wpcf7-not-valid {
+          border-color: #F45B53; }
+        .contact-main .contact-section1 .form form.invalid textarea:invalid:not(:placeholder-shown), .contact-main .contact-section1 .form form.invalid textarea.wpcf7-not-valid {
+          border-color: #F45B53; }
+        .contact-main .contact-section1 .form form.invalid [aria-required="true"] {
+          border-color: #F45B53; }
   .contact-main .contact-section2 {
     display: flex;
     margin-bottom: 100px;
@@ -3387,6 +3415,14 @@ button:focus {
   transform: rotate(0deg) !important;
   -webkit-transform: scale(0) !important;
   transform: scale(0) !important; }
+
+.wpcf7-response-output,
+.wpcf7-not-valid-tip,
+.screen-reader-response {
+  display: none !important; }
+
+.wpcf7-response-output {
+  font-size: 0; }
 
 .privacy-main {
   display: flex;

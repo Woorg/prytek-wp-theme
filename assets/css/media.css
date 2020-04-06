@@ -35,6 +35,21 @@
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 1px; }
+        .media-main .media-articles .media-article a.media-article__title-link {
+          font-size: 28px;
+          line-height: 40px;
+          color: #2B2B2B;
+          font-weight: bold;
+          margin-bottom: 20px; }
+        .media-main .media-articles .media-article a.media-article__more {
+          color: #0080FF;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 14px;
+          letter-spacing: 1px; }
+      .media-main .media-articles .media-article img {
+        max-width: 100%;
+        height: auto; }
   .media-main .page-wrapper {
     width: 940px;
     display: flex;

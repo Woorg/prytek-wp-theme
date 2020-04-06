@@ -1,6 +1,6 @@
 @import 'vars.scss';
 .about-header{
-    background-image: url(../images/about/bg-header.png);        
+    background-image: url(../images/about/bg-header.png);
 }
 .about-header{
     display: flex;
@@ -39,7 +39,7 @@
         margin-right: 40px;
     }
     .main-areas-cont{
-        display: flex; 
+        display: flex;
         .main-areas-box{
             display: flex;
             flex-direction: column;
@@ -51,6 +51,15 @@
             box-shadow: 0px 25px 50px rgba(78, 81, 144, 0.07);
             &:not(:last-child){
                 margin-right: 40px;
+            }
+            .main-areas_image {
+                max-width: 85px;
+                width: 100%;
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                }
             }
             h5{
                 font-weight: bold;
@@ -65,30 +74,30 @@
                 box-shadow: 0px 25px 50px rgba(78, 81, 144, 0.07), 0px 4px 7px rgba(78, 81, 144, 0.15);
             }
         }
-        
+
     }
 }
 .section2-about{
     overflow: hidden;
     .section2-image_1{
-        min-width: 50%;   
+        min-width: 50%;
         overflow: hidden;
         img{
             height: 100%;
-            min-width: 100%;  
-            vertical-align: bottom;          
+            min-width: 100%;
+            vertical-align: bottom;
         }
     }
     .section2-image_2{
-        min-width: 50%;  
-        overflow: hidden;  
+        min-width: 50%;
+        overflow: hidden;
         img{
             min-height: 100%;
             min-width: 160%;
             left: 50%;
             top: 100%;
             vertical-align: bottom;
-        }     
+        }
     }
     .section2-image_3{
         min-width: 50%;
@@ -97,7 +106,7 @@
             min-height: 100%;
             min-width: 100%;
             vertical-align: bottom;
-        }        
+        }
     }
 .section2-row{
         display: flex;
@@ -127,7 +136,7 @@
             width: 50%;
             z-index: 1;
     }
-} 
+}
 .section2-row1-text{
     margin-bottom: 140px;
 }
@@ -186,7 +195,7 @@
             font-size: 40px;
             width: 300px;
         }
-        .main-areas-cont{    
+        .main-areas-cont{
             .main-areas-box{
                 width: 230px;
                 h5{
@@ -292,7 +301,7 @@
         }
     }
 }
-@media only screen and (max-width: 1024px) {   
+@media only screen and (max-width: 1024px) {
     .about-header{
         justify-content: center;
         .header-about-content{
@@ -351,10 +360,10 @@
             }
         }
         .section2-row{
-            
+
             .section2-text{
                 margin-left: 25px;
-                
+
                 &.section2-row1-text1{
                     margin-bottom: 40px;
                 }
@@ -368,9 +377,9 @@
                     margin-bottom: 20px;
                     font-size: 26px;
                     line-height: 40px;
-                    
+
                 }
-                
+
             }
             .section2-image_1 img{
                 min-height: 500px;
@@ -379,9 +388,9 @@
             .section2-row2-text{
                 padding-bottom: 0px;
             }
-            
+
         }
-        
+
     }
     .about-main{
         .section2-about{
@@ -411,7 +420,7 @@
                 width: 100%;
                 margin-bottom: 20px;
                 .the-future{
-                    display: inline;    
+                    display: inline;
                 }
             }
             p{
@@ -434,7 +443,7 @@
             .main-areas-cont{
                 flex-direction: column;
                 align-items: center;
-                
+
                 .main-areas-box{
                     width: calc(100% - 80px);
 
@@ -444,12 +453,12 @@
                     margin-right: 0 !important;
                     padding-top: 27px;
                     padding-bottom: 27px;
-                    
+
                 }
             }
         }
         .section2-row{
-            
+
             flex-direction: column-reverse;
             &.section2-row2{
                 flex-direction: column;
@@ -474,7 +483,7 @@
                 img{
                     width: 140vw;
                     min-height: 140vw;
-                    
+
                     transform: translate(-50%, -50%);
                     position: absolute;
                 }
@@ -492,7 +501,7 @@
                 &.section2-image_2{
                     min-height: 50px;
                     height: 50vw;
-                    
+
                     width: 100%;
                     img{
                         top: 40%;
@@ -500,7 +509,7 @@
                         left: 60%;
                         width: 100%;
                         height: 100%;
-                        
+
                     }
                 }
                 &.section2-image_3{

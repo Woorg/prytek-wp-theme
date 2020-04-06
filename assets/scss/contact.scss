@@ -54,10 +54,11 @@
                     &:hover{
                         border-color: $dark;
                     }
-                    &:invalid:not(:placeholder-shown){
+                    &:invalid:not(:placeholder-shown),
+                    &.wpcf7-not-valid {
                         border-color: #F45B53;
                     }
-                    &:valid:not(:placeholder-shown){
+                    &:valid:not(:placeholder-shown) {
                         border-color: #41CE7F;
                     }
                     &:focus{
@@ -83,7 +84,8 @@
                     &:hover{
                         border-color: $dark;
                     }
-                    &:invalid:not(:placeholder-shown){
+                    &:invalid:not(:placeholder-shown),
+                    &.wpcf7-not-valid {
                         border-color: #F45B53;
                     }
                     &:valid:not(:placeholder-shown){
@@ -118,7 +120,24 @@
                     }
                 }
 
+                &.invalid {
+                    input {
+                        &:invalid:not(:placeholder-shown),
+                        &.wpcf7-not-valid {
+                            border-color: #F45B53;
+                        }
+                    }
+                    textarea {
+                        &:invalid:not(:placeholder-shown),
+                        &.wpcf7-not-valid {
+                            border-color: #F45B53;
+                        }
 
+                    }
+                    [aria-required="true"] {
+                        border-color: #F45B53;
+                    }
+                }
             }
 
         }
@@ -188,8 +207,8 @@
     display: flex;
     align-self: start;
     justify-content: space-around;
-    width: 100%;    
-    
+    width: 100%;
+
 }
 @media only screen and (max-width: 1400px) {
     .contact-main{
@@ -555,4 +574,15 @@ opacity:0 !important;
 transform: rotate(0deg) !important;
 -webkit-transform:scale(0) !important;
 transform:scale(0) !important;
+}
+
+
+.wpcf7-response-output,
+.wpcf7-not-valid-tip,
+.screen-reader-response {
+    display: none !important;
+}
+
+.wpcf7-response-output {
+    font-size: 0;
 }

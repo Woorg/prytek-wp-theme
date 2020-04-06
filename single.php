@@ -31,8 +31,11 @@
 <?php elseif ( is_page(13) ) : ?>
 <header class="contact-header">
 <?php elseif ( is_singular() ) :  ?>
-<?php $background_article = get_field( 'background_article' ); ?>
-<header class="white-header article-header invest-header" style="background-image=url('<?php echo $background_article['url']; ?>');">
+<?php $background_article = get_field( 'background_article' );
+  $bg = ( $background_article ) ? "style=background-image:url(" . $background_article['url'] . ");" : '';
+?>
+
+<header class="white-header article-header invest-header" <?php echo $bg; ?>>
 <?php endif; ?>
 
     <div class="menu-mobile">
@@ -97,6 +100,11 @@
 
           <?php elseif ( is_page(15)  ) : ?>
              <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H18.2692" stroke="#2B2B2B" stroke-width="2"/>
+                    <path d="M12.5596 1L19.5596 7.5L12.5596 15" stroke="#2B2B2B" stroke-width="2"/>
+                </svg>
+           <?php elseif ( is_single() ) : ?>
+            <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 8H18.2692" stroke="#2B2B2B" stroke-width="2"/>
                     <path d="M12.5596 1L19.5596 7.5L12.5596 15" stroke="#2B2B2B" stroke-width="2"/>
                 </svg>

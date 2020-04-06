@@ -142,6 +142,9 @@ function prytek_scripts() {
 	elseif ( is_page(11) ) :
 	wp_enqueue_script('mainsectors', get_template_directory_uri() . '/assets/script/mainsectors.js', array('jquery'), '', true);
 	wp_script_add_data( 'mainsectors', 'defer', true );
+	elseif ( is_page(27) ) :
+	wp_enqueue_script('contact', get_template_directory_uri() . '/assets/script/contact.js', array('jquery'), '', true);
+	wp_script_add_data( 'contact', 'defer', true );
 
 	endif;
 

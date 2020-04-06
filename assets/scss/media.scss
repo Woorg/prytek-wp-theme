@@ -27,6 +27,7 @@
                 color: $dark;
                 font-weight: bold;
                 margin-bottom: 20px;
+
             }
             &__description{
                 color: $grey;
@@ -40,7 +41,26 @@
                 text-transform: uppercase;
                 font-size: 14px;
                 letter-spacing: 1px;
+                &.media-article__title-link {
+                    font-size: 28px;
+                    line-height: 40px;
+                    color: $dark;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                &.media-article__more {
+                    color: $blue;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                }
             }
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
         }
     }
     .page-wrapper{

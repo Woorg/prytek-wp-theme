@@ -105,9 +105,16 @@
                     <path d="M0 8H18.2692" stroke="#2B2B2B" stroke-width="2"/>
                     <path d="M12.5596 1L19.5596 7.5L12.5596 15" stroke="#2B2B2B" stroke-width="2"/>
                 </svg>
-          <?php else : ?>
+          <?php elseif ( is_single() ) : ?>
+            <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 8H18.2692" stroke="#2B2B2B" stroke-width="2"/>
+                    <path d="M12.5596 1L19.5596 7.5L12.5596 15" stroke="#2B2B2B" stroke-width="2"/>
+                </svg>
+          <?php elseif ( is_page(27) ) :  ?>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="arrowright">
 
+          <?php else : ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow.svg" alt="arrowright">
           <?php endif; ?>
         </a></div>
 

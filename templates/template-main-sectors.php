@@ -51,7 +51,7 @@ get_header();
                     <h4><?php the_sub_field( 'name' ); ?></h4>
                     <?php the_sub_field( 'tekst' ); ?>
                 </div>
-                <div class="people_image"><?php echo wp_get_attachment_image( $image, 'full' ); ?></div>
+                <div class="people_image"><?php echo wp_get_attachment_image( $image, 'medium' ); ?></div>
                 <h4 class="people_name"><?php the_sub_field( 'name' ); ?></h4>
                 <p class="people_subtitle"><?php the_sub_field( 'role' ); ?></p>
             </div>
@@ -72,7 +72,7 @@ get_header();
                       <h4><?php the_sub_field( 'name' ); ?></h4>
                       <?php the_sub_field( 'tekst' ); ?>
                   </div>
-                  <div class="people_image"><?php echo wp_get_attachment_image( $image, 'full' ); ?></div>
+                  <div class="people_image"><?php echo wp_get_attachment_image( $image, 'medium' ); ?></div>
                   <h4 class="people_name"><?php the_sub_field( 'name' ); ?></h4>
                   <p class="people_subtitle"><?php the_sub_field( 'role' ); ?></p>
               </div>
@@ -99,7 +99,7 @@ get_header();
                         <h4><?php the_sub_field( 'name' ); ?></h4>
                         <?php the_sub_field( 'tekst' ); ?>
                     </div>
-                    <div class="people_image"><?php echo wp_get_attachment_image( $image, 'full' ); ?></div>
+                    <div class="people_image"><?php echo wp_get_attachment_image( $image, 'medium' ); ?></div>
                     <h4 class="people_name"><?php the_sub_field( 'name' ); ?></h4>
                     <p class="people_subtitle"><?php the_sub_field( 'role' ); ?></p>
                 </div>
@@ -123,7 +123,7 @@ get_header();
                         <h4><?php the_sub_field( 'name' ); ?></h4>
                         <?php the_sub_field( 'tekst' ); ?>
                     </div>
-                    <div class="people_image"><?php echo wp_get_attachment_image( $image, 'full' ); ?></div>
+                    <div class="people_image"><?php echo wp_get_attachment_image( $image, 'medium' ); ?></div>
                     <h4 class="people_name"><?php the_sub_field( 'name' ); ?></h4>
                     <p class="people_subtitle"><?php the_sub_field( 'role' ); ?></p>
                 </div>
@@ -187,7 +187,7 @@ get_header();
           <?php $hide = get_sub_field( 'skryt' ) ? 'style="display: none;"' : ''; ?>
           <?php $image = get_sub_field( 'image' ); ?>
             <div class="people" <?php echo $hide;  ?>>
-              <div class="people_image"><?php echo wp_get_attachment_image( $image, 'full' ); ?></div>
+              <div class="people_image"><?php echo wp_get_attachment_image( $image, 'medium' ); ?></div>
               <h4 class="people_name"><?php the_sub_field( 'name' ); ?></h4>
               <p class="people_subtitle"><?php the_sub_field( 'role' ); ?></p>
           </div>

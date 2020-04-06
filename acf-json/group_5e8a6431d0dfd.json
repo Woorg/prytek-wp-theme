@@ -1,0 +1,43 @@
+{
+    "key": "group_5e8a6431d0dfd",
+    "title": "Template: Privacy page",
+    "fields": [
+        {
+            "key": "field_5e8a64a783f5e",
+            "label": "Privacy text",
+            "name": "privacy_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "media_upload": 1,
+            "toolbar": "full",
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-privacy.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1586128055
+}

@@ -16,7 +16,7 @@
         <div class="footer-main">
             <div class="footer_logo-and-about">
                 <div class="footer-col-logo">
-                    <a href="index.html" class="footer-logo">
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo">
 	                    	<?php the_field( 'logo_secondary', 'option' ); ?>
 
                     </a>
@@ -50,7 +50,7 @@
                         <p><?php the_sub_field( 'text' ); ?></p>
                     </li>
                   <?php endif; ?>
-									<?php endwhile; ?>
+				    <?php endwhile; ?>
 
                 </ul>
 	              <?php endif ?>

@@ -90,8 +90,8 @@ add_filter( 'script_loader_tag', function($tag, $handle){
 
 // Change wp nav item classes
 
-add_filter( 'nav_menu_css_class', 'cyclone_nav_menu_css_class', 10, 4 );
-function cyclone_nav_menu_css_class( $classes, $item, $args, $depth ){
+add_filter( 'nav_menu_css_class', 'prytek_nav_menu_css_class', 10, 4 );
+function prytek_nav_menu_css_class( $classes, $item, $args, $depth ){
   // var_dump($item)
   if (in_array('current-menu-item', $classes) ){
     // $classes[] = 'current ';
@@ -105,10 +105,32 @@ function cyclone_nav_menu_css_class( $classes, $item, $args, $depth ){
 
 
 // Change wp nav link classes
-add_filter( 'nav_menu_link_attributes', 'cyclone_filter_nav_menu_link_attributes', 10, 4 );
-function cyclone_filter_nav_menu_link_attributes( $atts, $item, $args, $depth ) {
+add_filter( 'nav_menu_link_attributes', 'prytek_filter_nav_menu_link_attributes', 10, 4 );
+function prytek_filter_nav_menu_link_attributes( $atts, $item, $args, $depth ) {
   if ( $item->current ) {
     $atts['class'] .= 'current';
   }
   return $atts;
 }
+
+
+
+function prytek_remove_wp_block_library_css(){
+ wp_dequeue_style( 'wp-block-library' );
+ wp_dequeue_style( 'wp-block-library-theme' );
+}
+add_action( 'wp_enqueue_scripts', 'prytek_remove_wp_block_library_css' );
+
+
+add_filter( 'post_thumbnail_html', 'prytek_remove_width_attribute', 10 );
+add_filter( 'image_send_to_editor', 'prytek_remove_width_attribute', 10 );
+
+function prytek_remove_width_attribute( $html ) {
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
+
+
+
+
+

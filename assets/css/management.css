@@ -100,7 +100,8 @@
             font-weight: 500;
             color: #A5A5A5; }
       .management-main .seniors-head .seniors-head-row .senior .image-senior img {
-        width: 320px; }
+        width: 320px;
+        height: auto; }
   .management-main .seniors-head .senior-mobile-row {
     display: none; }
 

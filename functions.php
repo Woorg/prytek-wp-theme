@@ -134,9 +134,17 @@ function prytek_scripts() {
 	wp_script_add_data( 'script', 'defer', true );
 
 
+	if ( is_front_page() || is_home() || is_page(2) ) :
 	wp_enqueue_script('homescroll', get_template_directory_uri() . '/assets/script/homescroll.js', array('jquery'), '', true);
-
 	wp_script_add_data( 'homescroll', 'defer', true );
+	elseif ( is_page(9) ) :
+
+	elseif ( is_page(11) ) :
+	wp_enqueue_script('mainsectors', get_template_directory_uri() . '/assets/script/mainsectors.js', array('jquery'), '', true);
+	wp_script_add_data( 'mainsectors', 'defer', true );
+
+	endif;
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

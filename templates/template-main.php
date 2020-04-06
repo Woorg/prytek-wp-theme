@@ -12,16 +12,9 @@ get_header();
 
 ?>
 
-<?php
-    /* Start the Loop */
-    while ( have_posts() ) : the_post();
+<h1 class="white h1-1"><?php the_field( 'title' ); ?></h1>
 
-      the_content();
-
-    endwhile;
-
-  ?>
-
+</header>
   <main class="home">
 
         <section class="section2-home">
@@ -122,20 +115,18 @@ get_header();
 
               <?php elseif ($q->current_post == 2 ): ?>
 
-
               <a href="<?php the_permalink(); ?>" class="right">
                   <div class="home-4_image2"><?php echo get_the_post_thumbnail( $post->ID,  'full' ); ?></div>
                   <div class="bottom">
-                      <p class="date"><?php the_date() ; ?></p>
+                      <p class="date"><?php the_date(); ?></p>
                       <h3><?php the_title(); ?></h3>
-                      <p><?php the_excerpt();; ?></p>
+                      <p><?php the_excerpt(); ?></p>
                   </div>
               </a>
 
               <?php endif; ?>
 
               <?php endwhile; wp_reset_postdata(); ?>
-
 
 
             </div>

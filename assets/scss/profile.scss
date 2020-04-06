@@ -45,7 +45,7 @@
             }
             svg{
                 animation: arrow-left 3s infinite;
-                animation-play-state: paused; 
+                animation-play-state: paused;
             }
             h5{
                 font-size: 17px;
@@ -100,7 +100,7 @@
                 .bold{
                     font-weight: bold;
                 }
-            } 
+            }
         }
     }
 }
@@ -113,7 +113,7 @@
             ul p, p{
                 width: 500px;
             }
-            
+
         }
         .profile-image{
             img{
@@ -204,14 +204,14 @@
             }
             &.igor-image{
                 img{
-                    transform: translateX(-30%);    
+                    transform: translateX(-30%);
                 }
             }
             &.arnon-image{
                 padding-top: 300px;
                 img{
-                    width: 550px;  
-                    transform: translateX(-10%);  
+                    width: 550px;
+                    transform: translateX(-10%);
                     min-height: auto;
                 }
             }
@@ -231,54 +231,70 @@
             display: flex;
             flex-direction: column;
 
-            .profile-name-photo{
+            .profile-name-photo {
                 height: 111vw;
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+
                 &.profile-arnon-photo{
                     background-image: url(../images/profile/arnon-bg.png);
                 }
+
                 &.profile-igor-photo{
                     background-image: url(../images/profile/igor-bg.png);
                 }
+
                 &.profile-andrey-photo{
                     background-image: url(../images/profile/andrey-bg.png);
                 }
+
                 &.profile-yair-photo{
                     background-image: url(../images/profile/yair-bg.png);
                 }
+
                 &.profile-maria-photo{
-                    background-image: url(../images/profile/maria-bg.png);   
+                    background-image: url(../images/profile/maria-bg.png);
                 }
+
                 &.profile-guy-photo{
-                    background-image: url(../images/profile/guy-bg.png);   
+                    background-image: url(../images/profile/guy-bg.png);
                 }
+
                 &.profile-gil-photo{
-                    background-image: url(../images/profile/gil-bg.png);   
+                    background-image: url(../images/profile/gil-bg.png);
                 }
+
                 &.profile-ariel-photo{
-                    background-image: url(../images/profile/ariel-bg.png);   
+                    background-image: url(../images/profile/ariel-bg.png);
                 }
+
                 &.profile-iftah-photo{
-                    background-image: url(../images/profile/iftah-bg.png);   
+                    background-image: url(../images/profile/iftah-bg.png);
                 }
+
                 &.profile-shomoil-photo{
-                    background-image: url(../images/profile/shomoil-bg.png);   
+                    background-image: url(../images/profile/shomoil-bg.png);
                 }
+
                 &.profile-joe-photo{
-                    background-image: url(../images/profile/joe-bg.png);   
+                    background-image: url(../images/profile/joe-bg.png);
                 }
+
                 &.profile-alexander-photo{
-                    background-image: url(../images/profile/alexander-bg.png);   
+                    background-image: url(../images/profile/alexander-bg.png);
                 }
+
                 &.profile-phina-photo{
-                    background-image: url(../images/profile/phina-bg.png);   
+                    background-image: url(../images/profile/phina-bg.png);
                 }
+
                 &.profile-ben-photo{
-                    background-image: url(../images/profile/ben-bg.jpg);   
+                    background-image: url(../images/profile/ben-bg.jpg);
                 }
+
                 background-size: cover;
                 position: relative;
                 padding-top: 90px;
@@ -321,7 +337,7 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-            
+
             ul{
                 margin-left: 0;
                 align-items: center;
@@ -373,7 +389,7 @@
                 }
                 h4{
                     font-size: 16px;
-                    
+
                 }
                 a.back{
                     margin-top: 40px;
@@ -406,4 +422,4 @@
             }
         }
     }
-}   
+}

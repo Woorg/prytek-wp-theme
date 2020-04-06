@@ -14,7 +14,7 @@
             animation: arrow-right 3s infinite;
             animation-play-state: paused;
         }
-        
+
         &:hover{
             svg{
                 animation-play-state: running;
@@ -25,7 +25,7 @@
         margin-left: 190px;
         padding-top: 100px;
         color: White;
-        
+
         padding-bottom: 20px;
         h1{
             width: 950px;
@@ -37,7 +37,7 @@
             font-weight: 500;
             width: 460px;
         }
-        
+
     }
 }
 .management-main{
@@ -131,14 +131,15 @@
                 }
                 .image-senior img{
                     width: 320px;
+                    height: auto;
                 }
-            }   
+            }
         }
         .senior-mobile-row{
             display: none;
         }
 
-    }   
+    }
 }
 @media only screen and (max-width: 1400px) {
     .management-main{
@@ -243,7 +244,7 @@
                 padding-top: 60px;
                 margin-bottom: 60px;
             }
-            
+
             .seniors-head-row{
                 margin-left: 0;
                 margin-bottom: 60px;
@@ -280,7 +281,7 @@
                     }
                 }
             }
-            
+
             .seniors-head-row-woman{
                 .senior:first-child{
                     margin-right: 60px;
@@ -386,8 +387,8 @@
             width: 300px;
             h1{
                 font-size: 40px;
-                line-height: 60px;  
-                margin-bottom: 10px; 
+                line-height: 60px;
+                margin-bottom: 10px;
             }
             p{
                 width: 310px;

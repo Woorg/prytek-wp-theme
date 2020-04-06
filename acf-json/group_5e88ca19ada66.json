@@ -28,7 +28,14 @@
             "type": "textarea",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e88ca2b3a8dd",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
@@ -39,6 +46,123 @@
             "maxlength": "",
             "rows": "",
             "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5e898e4504acf",
+            "label": "Delta title",
+            "name": "delta_title",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e88ca2b3a8dd",
+                        "operator": "==contains",
+                        "value": "Fintech sector"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5e890ecfd20b3",
+                        "operator": "==contains",
+                        "value": "The combination of Prytek’s capabilities, fintech portfolio and Delta Capita’s Financial Services industry expertise, established one of the leading fintech platforms in Europe providing solutions across global financial markets"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5e898edfa0ec7",
+            "label": "Delta text",
+            "name": "delta_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e898e4504acf",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5e898f2ba0ec8",
+            "label": "Delta link",
+            "name": "delta_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e898e4504acf",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e898f4ba0ec9",
+            "label": "Delta image",
+            "name": "delta_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e898e4504acf",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -58,5 +182,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1586040561
+    "modified": 1586073450
 }

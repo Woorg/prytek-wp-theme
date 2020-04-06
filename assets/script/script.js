@@ -46,4 +46,11 @@ window.addEventListener('resize', function() {
        onBurgerClick();
     }
 })
+
+
+// jQuery(document).ready(function ($) {
+//     $('img').removeAttr('width').removeAttr('height');
+// });
+
+
 }());
